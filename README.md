@@ -1,2 +1,1 @@
-# twitter
-assignment-twitter
+# assignment

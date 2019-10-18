@@ -1,0 +1,35 @@
+<mat-toolbar color="accent">
+  <span>Deepak Chaula</span>
+  <span class="demo-toolbar"></span>
+</mat-toolbar>
+
+
+  <div class="container">
+    <div class="topHeader">
+      <span class="leftFloat">Search @ Twitter</span>
+      <span class="rightFloat">Auto refresh After in {{counter}} seconds</span>
+    </div>
+      <div class="searchFilter">
+          <div class="leftFloatFull">
+              <form [formGroup]="form" class="app-search">
+                <div class="searchCenter">
+                  <input matInput type="text" formControlName="groupName" [(ngModel)]="searchText" placeholder="adobe" class="form-control">
+                  <button mat-flat-button color="primary" (click)="getNews()">Search</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="clearFix"></div>
+      <div class="row">
+        <mat-card class="column" *ngFor="let item of myGroupPostDataService" (click)="openDialog(item.id)" id={{item.id}}>
+        
+          <mat-card-header>
+            <img mat-card-avatar src="{{item.user.profile_image_url}}" alt="">
+            <mat-card-title><span>{{item.user.name}}</span><span>{{item.user.screen_name}}</span>
+              <span>{{item.created_at}}</span></mat-card-title>
+            <mat-card-subtitle>{{item.text}}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </div>
+    
+  </div>

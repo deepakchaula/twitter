@@ -1,0 +1,134 @@
+.wordBreak {
+    word-break: break-all;
+}
+table {
+    width: 100%;
+}
+.mat-sort-header-container {
+    align-items: center;
+}
+input {
+    width: 100%;
+    margin: 30px auto;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    padding: 0 20px;
+}
+.mat-card-avatar {
+    border-radius: 4px;
+}
+span {
+    margin-right: 20px;
+}
+.form-control {
+    float: left;
+    width: 70%;
+}
+.clearFix {
+    clear: both;
+}
+button {
+    margin: 30px 10px;
+}
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+    background-color: #1da1f2;
+}
+.app-search {
+    margin: 0 0 0 40px;
+}
+.searchCenter {
+    margin: 0 auto;
+    width: 70%;
+}
+.topHeader {
+    margin: 0 auto;
+    color: #1da1f2;
+    width: 80%;
+    height: 80px;
+    border-bottom: 2px solid #1da1f2;
+}
+.topHeader span {
+    margin-top: 30px;
+}
+.leftFloat {
+    float: left;
+}
+.rightFloat {
+    float: right;
+}
+.mat-card-subtitle {
+    color: rgba(0, 0, 0, 1);
+}
+.mat-card-title {
+    color: rgba(0, 0, 0, .54);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media(min-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 992px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media(min-width: 1200px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+
+
